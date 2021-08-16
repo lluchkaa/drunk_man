@@ -16,9 +16,7 @@ To start the program, run `python drunk_man/main.py <options>`
 
 ### List of available options:
 
-Option           | Description
-       ---       |                 ---
-`-r (--radius)`  | Radius of circle man have to escape (optional)
-`-s (--step)`    | Length of man's step (optional)
-`-a (--angle)`   | Initial direction of the man (optional)
-`-p (--promile)` | Intoxication of the man (optional)
+- `-r (--radius)`  | Radius of circle man have to escape (optional)
+- `-s (--step)`    | Length of man's step (optional)
+- `-a (--angle)`   | Initial direction of the man (optional)
+- `-p (--promile)` | Intoxication of the man (optional)
