@@ -15,7 +15,11 @@ def get_args() -> Args:
     parser.add_argument("-r", "--radius", help="Field radius", default=400)
     parser.add_argument("-s", "--step", help="Drunk man step", default=30)
     parser.add_argument(
-        "-a", "--angle", help="Initial drunk man direction", default=uniform(0, pi * 2))
+        "-a",
+        "--angle",
+        help="Initial drunk man direction",
+        default=uniform(0, pi * 2),
+    )
     parser.add_argument("-p", "--promile", help="Man drunkness", default=0.33)
 
     return parser.parse_args()
@@ -41,8 +45,11 @@ def main():
 
     radius = float(args.radius)
     turtle.lt(angle)
-    man = DrunkMan(step=float(args.step), direction=radians(
-        angle), promile=float(args.promile))
+    man = DrunkMan(
+        step=float(args.step),
+        direction=radians(angle),
+        promile=float(args.promile),
+    )
 
     draw_circle(radius)
 
@@ -58,6 +65,7 @@ def main():
 
     print(repr(man.position))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
     done()
