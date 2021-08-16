@@ -2,8 +2,8 @@ from turtle import Turtle, done
 from random import uniform
 from math import degrees, pi, radians
 from argparse import ArgumentParser
-from typings import Args
 
+from typings import Args
 from drunk_man import DrunkMan
 
 turtle = Turtle()
